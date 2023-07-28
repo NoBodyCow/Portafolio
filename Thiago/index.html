@@ -1,0 +1,99 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Thiago Brañas - Desarrollador Web - Inicio</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap" async defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/Profile.jpg" alt="Logo">
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <center>
+    <section class="section-profile">
+      <div class="about-me-ult">
+        <div class="container">
+          <div class="banner">
+            <img src="images/banner.jpg" alt="">
+          </div>
+          <div class="profile">
+            <img src="images/Profile.jpg" alt="Mi Perfil">
+          </div>
+          <br><br>
+          <h2>Acerca de mí</h2><br>
+          <p>Hola, soy Thiago Brañas.<br> Soy un apasionado desarrollador web en busca de nuevos retos y<br>
+              oportunidades para mejorar mis habilidades<br> y conocimientos en el mundo del desarrollo web.</p>
+      </div>
+    </div>
+
+
+        <div class="about-me">
+          <div class="banner">
+            <img src="https://i.blogs.es/1d8a5b/python1/450_1000.jpg" alt=Habilidades">
+          </div>
+          <div class="container">
+            <h2>Python</h2><br>
+            <p>Mi trabajo en Python ha sido una experiencia emocionante y gratificante. Como desarrollador de software, Python se ha convertido en mi lenguaje de programación preferido debido a su simplicidad, legibilidad y versatilidad.</p>
+          </div>
+        </div>
+
+        <div class="about-me">
+          <div class="banner">
+            <img src="https://i.pinimg.com/originals/fa/e8/62/fae862fff4f6100d000a1c01c4030db0.jpg" alt=Habilidades">
+          </div>
+          <div class="container">
+            <h2>Full Stack</h2><br>
+            <p>Durante los últimos años, he tenido el privilegio de embarcarme en una emocionante y enriquecedora trayectoria como Full Stack Developer. Mi pasión por la tecnología y el desarrollo de software me llevó a sumergirme en el mundo de la programación desde una edad temprana.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+</center>
+
+<footer>
+  <div class="logo">
+    <img src="images/Profile.jpg" alt="Logo">
+  </div>
+  <nav>
+    <center>
+    <ul class="menu">
+      <li><a href="https://www.facebook.com/profile.php?id=100082629573885">Facebook</a></li>
+    </ul>
+  </center>
+  </nav>
+</footer>
+
+</body>
+<!-- Coloca tu enlace al archivo script.js después de cerrar el body o utiliza el atributo "defer" -->
+<script src="script.js"></script>
+
+<script>
+  function initMap() {
+    // Configuraciones iniciales del mapa
+    const ubicacion = { lat: -34.438731, lng: -59.451347 };
+    const mapa = new google.maps.Map(document.getElementById('map'), {
+      center: ubicacion,
+      zoom: 15 // Puedes ajustar el nivel de zoom según tus necesidades
+    });
+  
+    // Agregar un marcador para la ubicación
+    const marcador = new google.maps.Marker({
+      position: ubicacion,
+      map: mapa,
+      title: 'Mi ubicación' // Puedes cambiar el título del marcador si lo deseas
+    });
+  }
+</script>
+  
+</html>
